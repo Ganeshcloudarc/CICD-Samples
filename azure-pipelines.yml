@@ -1,0 +1,12 @@
+trigger:
+- master
+
+pool: 
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: print echo
+    jobs:
+      - job: print
+        steps:
+          - script: echo "Ganesh"
